@@ -125,7 +125,7 @@ html {
 }
 
 body {
-  font-family: "Hind", sans-serif;
+  font-family: "Harmattan", sans-serif;
   background-color: #fff;
   font-size: 14px;
   font-size: 0.9333333333rem;
@@ -149,7 +149,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Harmattan", sans-serif;
   font-weight: bold;
   color: #012f5c;
 }
@@ -304,6 +304,7 @@ img {
   opacity: 0;
   -webkit-backface-visibility: hidden;
   transition: all 0.3s ease-out;
+  backface-visibility: hidden;
 }
 
 .mfp-with-zoom.mfp-ready .mfp-container {
@@ -2330,6 +2331,7 @@ img {
     font-size: 1rem;
     font-weight: 500;
     color: #fff;
+    font-family: "Harmattan", sans-serif;
     padding: 30px 12px;
   }
   .header-style-1 #navbar {
@@ -2470,7 +2472,7 @@ img {
 }
 @media (max-width: 771px) {
   .hero .slide .row {
-    padding-top: 30%;
+    padding-top: 20%;
   }
 }
 .hero .slick-prev,
@@ -2562,40 +2564,20 @@ img {
 	hero style 1
 *************************************/
 .hero-style-1 .slide-caption h2, .hero-style-2 .slide-caption h2, .hero-style-3 .slide-caption h2 {
-  font-size: 60px;
-  font-size: 4rem;
-  margin: 0 0 0.3em;
-}
-@media (max-width: 1199px) {
-  .hero-style-1 .slide-caption h2, .hero-style-2 .slide-caption h2, .hero-style-3 .slide-caption h2 {
-    font-size: 50px;
-    font-size: 3.3333333333rem;
-  }
-}
-@media (max-width: 991px) {
-  .hero-style-1 .slide-caption h2, .hero-style-2 .slide-caption h2, .hero-style-3 .slide-caption h2 {
-    font-size: 40px;
-    font-size: 2.6666666667rem;
-  }
-}
-@media (max-width: 767px) {
-  .hero-style-1 .slide-caption h2, .hero-style-2 .slide-caption h2, .hero-style-3 .slide-caption h2 {
-    font-size: 30px;
-    font-size: 2rem;
-  }
+  font-size: 5rem;
+  font-family: "Harmattan", sans-serif;
 }
 .hero-style-1 .slide-caption, .hero-style-2 .slide-caption, .hero-style-3 .slide-caption {
   float: right;
 }
 .hero-style-1 .slide-caption p, .hero-style-2 .slide-caption p, .hero-style-3 .slide-caption p {
-  font-size: 18px;
-  font-size: 1.2rem;
+  font-size: 3rem;
   margin: 0 0 2em;
 }
 @media (max-width: 767px) {
   .hero-style-1 .slide-caption p, .hero-style-2 .slide-caption p, .hero-style-3 .slide-caption p {
-    font-size: 15px;
-    font-size: 1rem;
+    padding-top: 5%;
+    font-size: 1.5rem;
   }
 }
 
@@ -3531,6 +3513,7 @@ img {
     display: none;
   }
 }
+
 .owl-carousel .owl-item {
   direction: rtl;
 }
@@ -4859,7 +4842,7 @@ img {
   color: #999999;
 }
 .blog-single-content .post .post-body h3 {
-  font-family: "Hind", sans-serif;
+  font-family: "Harmattan", sans-serif;
   font-size: 24px;
   font-size: 1.6rem;
   margin: 0 0 0.63em;

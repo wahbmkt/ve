@@ -4,7 +4,10 @@
 html {
     font-size: $base-font-size + px;
 }
+// a{
 
+//     font-family: $base-font;
+// }
 body {
     font-family: $base-font;
     background-color: $white;
@@ -28,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $heading-font;
+    font-family:  $Harmattan;
     font-weight: bold;
     color: $heading-color;
 }
@@ -196,6 +199,7 @@ img {
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+    backface-visibility:hidden;
 }
 
 .mfp-with-zoom.mfp-ready .mfp-container {
