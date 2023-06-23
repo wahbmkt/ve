@@ -2452,6 +2452,7 @@ img {
   .hero .slide .vector-1 {
     position: inherit;
     margin-top: 15%;
+    margin-right: 20%;
   }
 }
 .hero .slide:focus {
