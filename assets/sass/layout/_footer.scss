@@ -29,7 +29,9 @@
 			color: $theme-secondary-color;
 		}
 	}
-
+	.upper-footer .row > div{
+		direction: rtl;
+	}
 	.upper-footer .row > .col {
 		@include media-query(991px) {
 			margin-bottom: 55px;
@@ -66,7 +68,7 @@
 			width: 28px;
 			height: 3px;
 			position: absolute;
-			left: 0;
+			right: 0;
 			bottom: 0;
 			border-radius: 5px;
 		}
@@ -79,7 +81,7 @@
 	/*** about widget ***/
 	.about-widget {
 		@include widther(1200px) {
-			padding-right: 25px;
+			padding-left: 25px;
 		}
 	}
 
@@ -101,7 +103,7 @@
 
 	.about-widget ul li {
 		position: relative;
-		padding-left: 38px;
+		padding-left: 85px;
 		line-height: 1.78em;
 	}
 
@@ -112,7 +114,7 @@
 	.about-widget ul li i {
 		color: $theme-secondary-color;
 		position: absolute;
-		left: 0;
+		right: -10%;
 		top: 3px;
 	}
 
@@ -126,17 +128,22 @@
 	.links-widget {
 		overflow: hidden;
 	}
+	.widget ul{
+		padding-right: 0%;
+		// overflow: hidden;
+	}
 
 	.links-widget ul li {
 		position: relative;
-		padding-left: 20px;
+		padding-right: 20px;
 
 		&:before {
 			font-family: "FontAwesome";
-			content: "\f105";
+			content: "\f104";
 			color: $theme-secondary-color;
 			position: absolute;
-			left: 0;
+			right: 0;
+
 			top: -1px;
 		}
 	}

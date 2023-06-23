@@ -12,26 +12,43 @@
         return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1], 10) : false;
     }
 
+    
+        // dots: true,
+        // fade: true,
+        // cssEase: 'linear'
 
     // Toggle mobile navigation
+    var openBtn = $(".navbar-header .open-btn");
+    var navbar = $(".navigation-holder");
+    openBtn.on("click", function() {
+        navbar.toggleClass("slideInn");
+    })
     function toggleMobileNavigation() {
-        var navbar = $(".navigation-holder");
-        var openBtn = $(".navbar-header .open-btn");
-        var closeBtn = $(".navigation-holder .close-navbar");
+        // var navbar = $(".navigation-holder");
+        // var openBtn = $(".navbar-header .open-btn");
+        // var closeBtn = $(".navigation-holder .close-navbar");
 
-        openBtn.on("click", function() {
-            if (!navbar.hasClass("slideInn")) {
-                navbar.addClass("slideInn");
-            }
-            return false;
-        })
+            // navbar.togo
+            // $toggleClass()
+            // if (!navbar.hasClass("slideInn")) {
+            //     navbar.addClass("slideInn");
+            //     return true; 
+            // }
+            // else{
 
-        closeBtn.on("click", function() {
-            if (navbar.hasClass("slideInn")) {
-                navbar.removeClass("slideInn");
-            }
-            return false;            
-        })
+            //     navbar.removeClass("slideInn");
+            // }
+            // if (navbar.hasClass("slideInn")) {
+            //     navbar.removeClass("slideInn");
+            //     return false;    
+            // }
+
+        // closeBtn.on("click", function() {
+        //     if (navbar.hasClass("slideInn")) {
+        //         navbar.removeClass("slideInn");
+        //     }
+        //     return false;            
+        // })
     }
 
     toggleMobileNavigation();
@@ -131,6 +148,17 @@
                 cssEase: 'linear'
             });
         }
+        $('.service-grids').slick({
+            autoplay: true,
+            autoplaySpeed: 6000,
+            pauseOnHover: true,
+            arrows: true,
+            prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+            nextArrow: '<button type="button" class="slick-next">Next</button>',
+            dots: true,
+            fade: true,
+            cssEase: 'linear'
+        });
     }
 
 

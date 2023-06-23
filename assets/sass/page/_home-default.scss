@@ -611,16 +611,19 @@
 	}
 
 	.newsletter-man {
-		position: absolute;
-		right: 0;
-		bottom: -110px;
-
+		margin-top: -8%;
+		max-width: 27%;
 		@include media-query(991px) {
 			display: none;
 		}
 	}
+	.newsletter-man {
+		// max-width: 81%;
+	}
 }
-
+.owl-carousel .owl-item{
+	direction: rtl;
+}
 
 /*--------------------------------------------------------------
 #1.4	blog-section 

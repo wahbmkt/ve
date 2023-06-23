@@ -2,6 +2,7 @@
 	service grid
 **********************************/
 .service-grids {
+	overflow-x: hidden;
 
 	.img-details-link {
 		margin-bottom: 30px;
@@ -92,7 +93,16 @@
 
 	.service-details p {
 		margin-bottom: 0;
+		white-space: nowrap;
+    	overflow: hidden;
+    	text-overflow: ellipsis;
 	}
+	// .service-details  {
+	// 	// margin-bottom: 0;
+	// 	white-space: nowrap;
+    // 	overflow: hidden;
+    // 	text-overflow: ellipsis;
+	// }
 }
 
 
@@ -201,6 +211,11 @@
 		position: relative;
 		z-index: 2;
 	}
+	.grid .details {
+		white-space: nowrap;
+    	overflow: hidden;
+    	text-overflow: ellipsis;
+	}
 
 	.grid .icon {
 		background-color: $theme-primary-color;
@@ -271,7 +286,7 @@
 	}
 
 	.hover-grid {
-		@include background-style("../images/services-s2-grid-bg.jpg", center center, cover, no-repeat, local);
+		@include background-style("../images/vector/icon-3d-4.webp", center center, cover, no-repeat, local);
 	}
 
 	/** hover **/

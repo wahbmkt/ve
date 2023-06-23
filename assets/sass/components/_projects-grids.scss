@@ -6,6 +6,28 @@
 	.inner {
 		position: relative;
 		overflow: hidden;
+		border-radius: 50%;
+		border-width: 1px;
+    	border-color: black;
+    	border-style: solid;
+		margin: 0px 10%;
+
+	}
+	.inner .img-holder{
+		align-items: center;
+	}
+	.inner img{
+		margin-left: auto;
+		margin-right: auto;
+		height: 170px;
+		width:  245px;
+		object-fit: cover;
+		align-items: center;
+		border-radius: 50%;
+		border-width: 1px;
+    	border-color: black;
+    	border-style: solid;
+
 	}
 
 	.details {
@@ -21,7 +43,7 @@
 
 	.grid:hover .details {
 		top: 0;
-		opacity: 1;
+		opacity: 0.8;
 	}
 
 	.details-inner {

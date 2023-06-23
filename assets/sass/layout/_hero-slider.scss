@@ -17,6 +17,8 @@
 	.slide {
 		height: 100vh;
 		position: relative;
+		background-image: $grad5;
+
 
 		@include media-query(991px) {
 			min-height: 500px;
@@ -35,22 +37,36 @@
 
 		&:before {
 			content: "";
-			@include overlay(transparentize($black, 0.6));
+			@include overlay(transparentize($black, 0.1));
 		}
 	}
-
+	.slide .vector-1{
+		position: absolute;
+		left:  -60%;
+		max-width: 70%;
+		top: -224%;
+		@include media-query(771px){
+			position:inherit ;
+			margin-top: 15%;
+		}
+	}
 	.slide:focus {
 		outline: none;
 	}
-
 	.slide .container {
 		height: 100%;
 		display: table;
 	}
-
 	.slide .row {
 		display: table-cell;
-		vertical-align: middle;
+		vertical-align: top;
+		direction: rtl;
+		padding-top: 10%;
+		@include media-query(771px){
+			// position:inherit ;
+			padding-top: 30%;
+		}
+		// float: right;
 	}
 
 
@@ -62,10 +78,12 @@
 		height: 50px;
 		z-index: 9;
 		border-radius: 50%;
-		@inlcude transition-time(0.3s);
+		@include transition-time(0.3s);
 
 		@include media-query(991px) {
 			display: none !important;
+			
+
 		}
 
 		&:before {
@@ -135,27 +153,27 @@
 	}
 
 	.hero-slider .slick-list .slick-current .slide-caption > h2 {
-		-webkit-animation: fadeInLeftSlow 1.5s 0.8s forwards;
-		-moz-animation: fadeInLeftSlow 1.5s 0.8s forwards;
-		-o-animation: fadeInLeftSlow 1.5s 0.8s forwards;
-		-ms-animation: fadeInLeftSlow 1.5s 0.8s forwards;
-		animation: fadeInLeftSlow 1.5s 0.8s forwards;
+		-webkit-animation: fadeInRightSlow 1.5s 0.8s forwards;
+		-moz-animation: fadeInRightSlow 1.5s 0.8s forwards;
+		-o-animation: fadeInRightSlow 1.5s 0.8s forwards;
+		-ms-animation: fadeInRightSlow 1.5s 0.8s forwards;
+		animation: fadeInRightSlow 1.5s 0.8s forwards;
 	}
 
 	.hero-slider .slick-list .slick-current .slide-caption > p {
-		-webkit-animation: fadeInLeftSlow 1.5s 1.4s forwards;
-		-moz-animation: fadeInLeftSlow 1.5s 1.4s forwards;
-		-o-animation: fadeInLeftSlow 1.5s 1.4s forwards;
-		-ms-animation: fadeInLeftSlow 1.5s 1.4s forwards;
-		animation: fadeInLeftSlow 1.5s 1.4s forwards;
+		-webkit-animation: fadeInRightSlow 1.5s 1.4s forwards;
+		-moz-animation: fadeInRightSlow 1.5s 1.4s forwards;
+		-o-animation: fadeInRightSlow 1.5s 1.4s forwards;
+		-ms-animation: fadeInRightSlow 1.5s 1.4s forwards;
+		animation: fadeInRightSlow 1.5s 1.4s forwards;
 	}
 
 	.hero-slider .slick-list .slick-current .slide-caption > .btns {
-		-webkit-animation: fadeInLeftSlow 1.5s 1.8s forwards;
-		-moz-animation: fadeInLeftSlow 1.5s 1.8s forwards;
-		-o-animation: fadeInLeftSlow 1.5s 1.8s forwards;
-		-ms-animation: fadeInLeftSlow 1.5s 1.8s forwards;
-		animation: fadeInLeftSlow 1.5s 1.8s forwards;
+		-webkit-animation: fadeInRightSlow 1.5s 1.8s forwards;
+		-moz-animation: fadeInRightSlow 1.5s 1.8s forwards;
+		-o-animation: fadeInRightSlow 1.5s 1.8s forwards;
+		-ms-animation: fadeInRightSlow 1.5s 1.8s forwards;
+		animation: fadeInRightSlow 1.5s 1.8s forwards;
 	}
 }
 
@@ -187,7 +205,9 @@
 			font-size: calc-rem-value(30);
 		}
 	}
-
+	.slide-caption{
+		float: right;
+	}
 	.slide-caption p {
 		font-size: 18px;
 		font-size: calc-rem-value(18);
