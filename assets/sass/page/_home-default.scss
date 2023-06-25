@@ -1,6 +1,20 @@
 /*--------------------------------------------------------------
 #0.6	services-section
 --------------------------------------------------------------*/
+.review-shape.up-move {
+    // position: relative;
+    bottom: 2rem;
+	animation: round-move 5s linear infinite;
+
+}
+@keyframes round-move {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
 .services-section {
 	padding-bottom: 30px;
 
@@ -335,12 +349,15 @@
 	}
 
 	.projects-grid .grid {
-		width: 25%;
-		float: left;
-		padding: 0 5px 10px;
+		// width: 25%;
+		// float: left;
+		// padding: 0 5px 10px;
+		.img-holder{
+			border: 0px;
+		}
 
 		@include media-query(1199px) {
-			width: 33.33%;
+			// width: 33.33%;
 		}
 
 		@include media-query(991px) {

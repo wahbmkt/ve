@@ -2,18 +2,27 @@
 	projects grid
 **********************************/
 .projects-grid {
+	// projects-grid services-s2-slider2
+	// background-color: $theme-primary-color;
+	.owl-nav{
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		top: -3rem;
+	}
+	// .owl-item {
+		// margin-right:38px;
+		// position: absolute;
+	// }
 
 	.inner {
 		position: relative;
 		overflow: hidden;
 		border-radius: 50%;
-		border-width: 1px;
-    	border-color: black;
-    	border-style: solid;
-		margin: 0px 10%;
-		// @include media-query()
-
+		// width: 245px;
+		
 	}
+
 	.inner .img-holder{
 		align-items: center;
 	}

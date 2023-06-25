@@ -452,15 +452,47 @@
         });
     }
 
-
+    
     /*------------------------------------------
-        = SERVICES S2 SLIDER
+    = SERVICES S2 SLIDER
     -------------------------------------------*/
     if ($(".services-s2-slider").length) {
         $(".services-s2-slider").owlCarousel({
-            autoplay:true,
+            // autoplay:true,
             smartSpeed: 300,
             margin: 30,
+            dots: false,
+            nav: true,
+            navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+            loop:true,
+            autoplayHoverPause:true,
+            responsive: {
+                0 : {
+                    items: 1
+                },
+
+                600 : {
+                    items: 2
+                },
+
+                // 1200 : {
+                //     items: 3
+                // }
+            }
+        });
+    }
+
+
+
+    if ($(".services-s2-slider2").length) {
+        $(".services-s2-slider2").owlCarousel({
+            // autoplay:true,
+            smartSpeed: 300,
+            margin: 50,
+            rtl:true,
+            dots: false,
+            nav: true,
+            navText: ['<i class="fa fa-chevron-right"></i>', '<i class="fa fa-chevron-left"></i>'],
             loop:true,
             autoplayHoverPause:true,
             responsive: {

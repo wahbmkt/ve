@@ -5,6 +5,20 @@
 #2.0	services-section-s2
 --------------------------------------------------------------*/
 .services-section-s2 {
+	.review-shape.up-move {
+		// position: relative;
+		bottom: 2rem;
+		animation: round-move 5s linear infinite;
+	
+	}
+	@keyframes round-move {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(360deg);
+		}
+	}
 	.owl-controls {
 		margin-top: 50px;
 	}
