@@ -1,14 +1,16 @@
 /*-------------------------------------------------------
 01. Variable css
 ---------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Harmattan:wght@400;500;600;700&family=Playfair+Display&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Blaka&family=Harmattan:wght@400;500;600;700&family=Marhey:wght@300;400;500;600;700&family=Playfair+Display&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Harmattan:wght@400;500;600;700&family=Playfair+Display&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700&display=swap');
+/* font-family:  */
 :root {
   --clr-nav: #ffffff;
   --clr-heading: #232323;
-  --clr-heading2: var(--clr-bg);
   --clr-body: #666;
   --clr-bg: #eaf2f6;
+  --clr-heading2: var(--clr-bg);
   --clr-bg-2: #c8d7e9;
   --clr-def: #024959;
   --clr-def-2: #00d59d;
@@ -17,8 +19,8 @@
   --clr-white: #fff;
   --clr-black: #000;
   --clr-black-2: #080821;
-  --font-2: "Aref Ruqaa", serif;
-  --font-1: "Harmattan", sans-serif;
+  --font-2: 'Changa', sans-serif;
+  --font-1: "Aref Ruqaa", serif;
   --font-3: "Shadows Into Light", cursive;
   --font-4: "Roboto", sans-serif;
   --font-5: "Oswald", sans-serif;

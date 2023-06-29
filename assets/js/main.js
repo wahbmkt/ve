@@ -1,4 +1,6 @@
 // End jQuery
+(function($){
+	"use strict";
 
     $(document).ready( function() {
 
@@ -117,46 +119,7 @@
 			},
 		});
 		
-		/* ==================================================
-			# Project Slider
-		 ===============================================*/
 		
-		/* ==================================================
-			# Work Init
-		 ===============================================*/
-		
-		// var swiper = new Swiper(".work-sldr", {
-		// 	navigation: {
-		// 		nextEl: ".swiper-button-next",
-		// 		prevEl: ".swiper-button-prev",
-		// 	},
-		// 	breakpoints: {
-		// 		0: {
-		// 			slidesPerView: 1,
-		// 			spaceBetween: 10,
-		// 		},
-		// 		640: {
-		// 			slidesPerView: 2,
-		// 			spaceBetween: 20,
-		// 		},
-		// 		768: {
-		// 			slidesPerView: 2,
-		// 			spaceBetween: 30,
-		// 		},
-		// 		992: {
-		// 			slidesPerView: 3,
-		// 			spaceBetween: 30,
-		// 		},
-		// 		1024: {
-		// 			slidesPerView: 4,
-		// 			spaceBetween: 30,
-		// 		},
-		// 	},
-		// });
-		
-		/* ==================================================
-            # Project Carousel
-         ===============================================*/
 		const swiperStageRight = new Swiper(".review-sldr", {
 			// Optional parameters
 			loop: true,
@@ -259,3 +222,4 @@
 
 		
     }); // end document ready function
+}(jQuery));
