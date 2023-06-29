@@ -5,9 +5,7 @@
 		/* ==================================================
 			Preloader Init
 		===============================================*/
-		$(window).on('load', function() {
-			$('.preloader').addClass('preloader-deactivate').fadeOut('slow');
-		});
+
 
         var mybutton = document.getElementById("scrtop");
 
@@ -60,18 +58,7 @@
 
 
 
-		$(window).on ('load', function (){
-			if ($(".wow").length) { 
-				var wow = new WOW({
-				boxClass:     'wow',      // animated element css class (default is wow)
-				animateClass: 'animated', // animation css class (default is animated)
-				offset:       20,          // distance to the element when triggering the animation (default is 0)
-				mobile:       true, // trigger animations on mobile devices (default is true)
-				live:         true,       // act on asynchronously loaded content (default is true)
-			});
-			wow.init();
-			}
-		});
+
 		
 		
 		var swiper = new Swiper('.project-sldr', {
@@ -247,6 +234,28 @@
 			// );
 			// console.log(window.getComputedStyle(this,':before').content);
 
-		})
+		});
+		$(window).on ('load', function (){
+			if ($(".wow").length) { 
+				var wow = new WOW({
+				boxClass:     'wow',      // animated element css class (default is wow)
+				animateClass: 'animated', // animation css class (default is animated)
+				offset:       20,          // distance to the element when triggering the animation (default is 0)
+				mobile:       true, // trigger animations on mobile devices (default is true)
+				live:         true,       // act on asynchronously loaded content (default is true)
+			});
+			wow.init();
+			}
+		});
+		$(window).on('load', function() {
+			if ($('.preloader').hasClass('preloader-deactivate')) {
+				
+
+			}else{
+
+				$('.preloader').addClass('preloader-deactivate');
+			}
+		});
+
 		
     }); // end document ready function
