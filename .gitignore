@@ -15,3 +15,6 @@ service.html
 register.html
 assets/tmp/
 assets/tmp
+assets/sass/style.scss
+assets/sass/component
+assets/sass/component/
